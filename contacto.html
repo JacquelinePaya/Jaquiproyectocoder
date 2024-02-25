@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;300&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <img class="logo" src="./Images/Logo1.png" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li> <a href="./index.html#inicio"> Inicio </a></li>
+                <li> <a href="./index.html#quiensoy"> ¿Quién soy? </a></li>
+                <li> <a href="./index.html#ideas"> Ideas </a></li>
+                <li> <a href="./index.html#miexperiencia"> Mi experiencia</a></li>
+                <li> <a href="./contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+
+        <section class="contacto">
+            <h4>¿Querés conocerme más? Contactate conmigo</h4>
+
+            <form action="form.php" method="post">
+                <label for="Nombre">Nombre o institución:</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="ej: Juana o Jardin del Sol">
+
+
+                <label for="motivo">Seleccione motivo de contacto</label>
+                <select name="motivodecontacto" id="motivo">
+                    <option value="">Seleccione una opción</option>
+                    <option value="">Entrevista Nivel Inicial</option>
+                    <option value="">Entrevista Niñera</option>
+                    <option value="">Solicitar CV</option>
+                    <option value="">Otro motivo</option>
+                </select>
+
+                <label for="teleono">Número de telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="ej: 1120202020">
+
+                <p>Mensaje</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10">
+            </textarea>
+
+                <input type="submit" value="Enviar">
+
+
+            </form>
+
+        </section>
+    </main>
+
+
+
+</body>
+
+
+</html>
