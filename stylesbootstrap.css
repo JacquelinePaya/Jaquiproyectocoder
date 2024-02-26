@@ -109,17 +109,29 @@ h2 {
     color:#ffc93d;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: #bd155b;
     font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Commissioner", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#bd155b;
+
 }
 
 /* ----- Body -------*/
 footer a{
     color: white;
+    font-size: smaller;
+
 
 }
