@@ -9,10 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesbootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;300&display=swap"
-        rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,9 +48,9 @@
                 </div>
             </nav>
 
-    
 
-            <div class="banner">
+
+            <div class="container-fluid banner">
             </div>
 
         </section>
@@ -84,7 +82,7 @@
                 <h2 class="fw-bold">Ideas</h2>
                 <p class="paragraph">Estas son algunas de las propuestas que planifiqué e implementé en mis practicas de
                     formación docente para Taller 3 y Taller 4.</p>
-                <div class="row tarjetas">
+                <div class="row tarjetas justify-content-center">
                     <article class="article col-10 col-md">
                         <h3>Conociendo a Isol</h3>
                         <img class="idea-img img-fluid" src="./Images/isol.jpg"
@@ -169,16 +167,29 @@
     </main>
 
     <footer class="bg-black text-light text-center py-4">
-        <ul>
-            <li> <a href="#inicio"> Inicio </a></li>
-            <li> <a href="#quiensoy"> ¿Quién soy? </a></li>
-            <li> <a href="#ideas"> Ideas </a></li>
-            <li> <a href="#miexperiencia"> Mi experiencia</a></li>
-            <li> <a href="#contacto"> Contacto </a></li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    <ul>
+                        <li> <a href="#inicio"> Inicio </a></li>
+                        <li> <a href="#quiensoy"> ¿Quién soy? </a></li>
+                        <li> <a href="#ideas"> Ideas </a></li>
+                        <li> <a href="#miexperiencia"> Mi experiencia</a></li>
+                        <li> <a href="#contacto"> Contacto </a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-center">
+                    <p>&copy; 2024 Jacqueline V.</p>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-right">
+                    <img class="logo" src="./Images/logo2.jpg" alt="Logo" width="60" height="60">
+                </div>
 
-        <p>&copy; 2024 Jacqueline V.</p>
+            </div>
+        </div>
     </footer>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
