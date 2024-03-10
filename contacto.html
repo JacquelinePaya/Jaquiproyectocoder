@@ -47,36 +47,49 @@
     </header>
 
     <main>
-        <h1>Contacto</h1>
+        <div class="container">
+            <h1>Contacto</h1>
+        </div>
 
         <section class="contacto">
-            <h4>¿Querés conocerme más? Contactate conmigo</h4>
-
             <form action="form.php" method="post">
-                <label for="Nombre">Nombre o institución:</label>
-                <input type="text" name="Nombre" id="Nombre" placeholder="ej: Juana o Jardin del Sol">
+                <div class="container">
+                    <div class="row mb-3">
+                        <label for="nombre" class="col-sm-6 col-form-label">Nombre o institución</label>
+                        <div class="col-sm-6">
+                            <input type="nombre" class="nombre" id="nombre" placeholder="Juana o Jardin del Sol">
+                        </div> 
+                    </div>
+                    <div class="row mb-3">
+                        <label for="nombre" class="col-sm-6 col-form-label">Email</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="email" id="email" placeholder="jardin@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="nombre" class="col-sm-6 col-form-label">Teléfono</label>
+                        <div class="col-sm-6">
+                            <input type="tel" class="telefono" id="telefono" placeholder="1120202020">
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <label for="motivo" class="col-sm-6 col-form-label">Seleccione motivo de contacto</label>
+                        <div class="col-sm-6 justify-content-center">
+                        <select name="motivodecontacto" id="motivo">
+                            <option value="">Seleccione una opción</option>
+                            <option value="">Entrevista Nivel Inicial</option>
+                            <option value="">Entrevista Niñera</option>
+                            <option value="">Solicitar CV</option>
+                            <option value="">Otro motivo</option>
+                        </select>
+                    </div>
+                    </div>
 
 
-                <label for="motivo">Seleccione motivo de contacto</label>
-                <select name="motivodecontacto" id="motivo">
-                    <option value="">Seleccione una opción</option>
-                    <option value="">Entrevista Nivel Inicial</option>
-                    <option value="">Entrevista Niñera</option>
-                    <option value="">Solicitar CV</option>
-                    <option value="">Otro motivo</option>
-                </select>
-
-                <label for="teleono">Número de telefono</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="ej: 1120202020">
-
-                <p>Mensaje</p>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10">
-            </textarea>
-
-                <input type="submit" value="Enviar">
-
-
+                    <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                </div>
             </form>
+
 
         </section>
     </main>
