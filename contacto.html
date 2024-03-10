@@ -47,46 +47,46 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container text-center text-md-start">
             <h1>Contacto</h1>
         </div>
 
-        <section class="contacto">
+        <section class="contacto text-center text-md-start">
             <form action="form.php" method="post">
                 <div class="container">
-                    <div class="row mb-3">
-                        <label for="nombre" class="col-sm-6 col-form-label">Nombre o institución</label>
-                        <div class="col-sm-6">
+                    <div class="row mb-2">
+                        <label for="nombre" class="col-12 col-md-6">Nombre o institución</label>
+                        <div class="col-12 col-md-6">
                             <input type="nombre" class="nombre" id="nombre" placeholder="Juana o Jardin del Sol">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="row mb-3">
-                        <label for="nombre" class="col-sm-6 col-form-label">Email</label>
-                        <div class="col-sm-6">
+                    <div class="row mb-2">
+                        <label for="nombre" class="col-12 col-md-6">Email</label>
+                        <div class="col-12 col-md-6">
                             <input type="email" class="email" id="email" placeholder="jardin@gmail.com">
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <label for="nombre" class="col-sm-6 col-form-label">Teléfono</label>
-                        <div class="col-sm-6">
+                    <div class="row mb-2">
+                        <label for="nombre" class="col-12 col-md-6">Teléfono</label>
+                        <div class="col-12 col-md-6">
                             <input type="tel" class="telefono" id="telefono" placeholder="1120202020">
                         </div>
                     </div>
-                    <div class="row mb-3 justify-content-center">
-                        <label for="motivo" class="col-sm-6 col-form-label">Seleccione motivo de contacto</label>
-                        <div class="col-sm-6 justify-content-center">
-                        <select name="motivodecontacto" id="motivo">
-                            <option value="">Seleccione una opción</option>
-                            <option value="">Entrevista Nivel Inicial</option>
-                            <option value="">Entrevista Niñera</option>
-                            <option value="">Solicitar CV</option>
-                            <option value="">Otro motivo</option>
-                        </select>
+                    <div class="row mb-3">
+                        <label for="motivo" class="col-12 col-md-6">Seleccione motivo de contacto</label>
+                        <div class="col-12 col-md-6">
+                            <select name="motivodecontacto" id="motivo">
+                                <option value="">Seleccione una opción</option>
+                                <option value="">Entrevista Nivel Inicial</option>
+                                <option value="">Entrevista Niñera</option>
+                                <option value="">Solicitar CV</option>
+                                <option value="">Otro motivo</option>
+                            </select>
+                        </div>
                     </div>
-                    </div>
-
-
-                    <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                </div>
+                <div class="container">
+                    <button type="submit" class="btn btn-secondary btn-sm mb-2">Enviar</button>
                 </div>
             </form>
 
