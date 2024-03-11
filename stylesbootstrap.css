@@ -54,6 +54,13 @@ video {
     padding: 2%;
     margin: 2% 10%;
 }
+.bg-no {
+    background-color: #ffffff;
+    max-width: 80%;
+    border-radius: 2%;
+    padding: 2%;
+    margin: 0% 10%;
+}
 
 .profile {
     border-radius: 50%;
@@ -134,29 +141,35 @@ footer a{
     font-size: smaller;
 }
 
+ol, ul {
+    padding-left: 0rem;
+}
+
 /*ESCULTURA.HTML */
-
-.artetridimensional {
-    height: 50%;
-    margin: 5%;
-    border-radius: 2%;
-    text-align: left;
-
+/* No banner en mobile*/
+@media (max-width: 767px) {
+    .fondo {
+        background-image: none;
+    }
 }
 
-.fondo {
-    background-image: url(./images/manos.jpg);
-    height: 50%;
-    border-radius: 2%;
-    margin-bottom: 2%;
-    text-align: left;
-}
+/* Banner version desktop */
+@media (min-width: 768px) {
+    .fondo {
+        background-image:url(./images/manos.jpg) !important;
+        background-attachment: fixed;
+        background-size:cover;
+        height: 50%;
+        border-radius: 2%;
+        margin-bottom: 2%;
+        }
+    }
 
-
-.multimediaescultura video {
-    width: 50%;
-    margin-left: 45%;
-    padding: 2% 2%;
-    display: inline-block;
-
-}
+    @media (min-width: 768px) {
+    .multimediaescultura video {
+        width: 50%;
+        margin-left: 45%;
+        padding: 2% 2%;
+        display: inline-block;
+    }
+    }
